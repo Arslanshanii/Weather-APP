@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	
+	<style>
+		input[type=text] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			font-size: 16px;
+			margin-right: 10px;
+		}
+		button {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color:#008CBA;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		#response {
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<form id="myForm" method="post">
+	<div class="response-area">
+	<h1>Weather App</h1>
+	
+	<label for="submit"></label>
+	<input class="input" type="text" id="city" name="userInput" placeholder="Enter city name">
+	<button type="submit" formaction="/get-weather">Send</button>
+	<div id="response">
+		<% if (locals.some) { %>
+			<p>Temperature: <%= some.temperature %> degrees</p>
+			<p>Condition: <%= some.condition %></p>
+			<p>Location: <%= some.location %></p>
+		  <% }else if(locals.somee){ %>
+				<p><%= somee %></p>
+			  <% } %>
+		
+	</div>
+	</div>
+	</form>
+	<footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Arslan Haider</p>
+        </div>
+    </footer>
+	
+	<div class="weather-animation">
+		<div class="wind"></div>
+	</div>
+
+	<div class="river-animation">
+		<div class="river"></div>
+	</div>
+</body>
+</html>
