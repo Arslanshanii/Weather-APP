@@ -2,7 +2,7 @@
 
 This is a simple weather application built using Express.js and the OpenWeatherMap API. It allows users to search for the weather conditions of a specific location and displays the temperature and weather condition.
 
-<img width="800" alt="Screenshot 2023-10-31 183214" src="https://github.com/Arslanshanii/Weather-APP/assets/107418040/32f485fa-cac8-4309-9c31-c465a7a20f39">
+<img width="300" alt="Screenshot 2023-10-31 183214" src="https://github.com/Arslanshanii/Weather-APP/assets/107418040/32f485fa-cac8-4309-9c31-c465a7a20f39">
 
 
 ##Features
